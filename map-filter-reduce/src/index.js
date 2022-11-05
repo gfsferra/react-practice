@@ -1,5 +1,8 @@
 
 import emojipedia from './emojipedia';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
 var numbers = [3, 56, 2, 48, 5];
 
@@ -51,3 +54,8 @@ var meanings = emojipedia.map(function (emojiEntry) {
 });
 
 console.log(`Challenge solution -> ${meanings}`);
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+)
